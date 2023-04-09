@@ -64,7 +64,7 @@ const userController = {
                 res.status(500).json(err);
             });
     },
-    // delete user data
+    // This was the Bonus: delete ALL user data and thoughts, this does not work correctly???
     deleteUser(req, res) {
         User.findOneAndDelete({ _id: req.params.userId })
             .then((userData) => {
