@@ -65,7 +65,7 @@ const thoughtController = {
   },
   // Delete single thought
   deleteThought(req, res) {
-    Thought.findOneAndRemove({ _id: req.params.thoughtId })
+    Thought.findOneAndDelete({ _id: req.params.thoughtId })
       .then((thoughtData) => {
         if (!thoughtData) {
           return res.status(404).json({ message: 'thought not found' });
@@ -77,10 +77,7 @@ const thoughtController = {
           { new: true }
         );
       })
-      .then((userData) => {
-        if (!userData) {
-          return res.status(404).json({ message: 'unable to associated thought' });
-        }
+      .then(() => {
         res.json({ message: 'thought deleted' });
       })
       .catch((err) => {

@@ -1,0 +1,30 @@
+[
+    {
+        "thoughtText": "I'm new here!",
+        "username": "testUser1"
+    },
+    {
+        "thoughtText": "I just woke up and I'm late for work",
+        "username": "testUser2"
+    },
+    {
+        "thoughtText": "Somedays are great some not!",
+        "username": "testUser3"
+    },
+    {
+        "thoughtText": "This is a test post",
+        "username": "testUser4"
+    },
+    {
+        "thoughtText": "It's 3pm somewhere",
+        "username": "testUser5"
+    },
+    {
+        "thoughtText": "Timing is everything",
+        "username": "testUser5"
+    },
+    {
+        "thoughtText": "Im hungry!",
+        "username": "testUser1"
+    }
+]
